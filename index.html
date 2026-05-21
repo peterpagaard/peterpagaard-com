@@ -11,7 +11,7 @@
 <meta property="og:title" content="Peter Pagaard Sommer — Founder af Pepas">
 <meta property="og:description" content="Founder af performance marketing-bureauet Pepas og webshops som Boombutik og Marmalade Co.">
 <meta property="og:url" content="https://peterpagaard.com">
-<meta property="og:image" content="https://peterpagaard.com/og-image.png">
+<meta property="og:image" content="https://peterpagaard.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="canonical" href="https://peterpagaard.com">
@@ -60,7 +60,9 @@ header{
 .nav-toggle{display:none;background:none;border:0;font-size:1.5rem;cursor:pointer}
 
 /* Hero */
-.hero{padding:128px 0 104px}
+.hero{padding:112px 0 96px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.hero-photo img{width:100%;height:auto;border-radius:4px;display:block;filter:saturate(.96)}
 .hero .eyebrow{font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:26px}
 .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);font-weight:800;letter-spacing:-.035em;line-height:1.04}
 .hero h1 .accent{color:var(--navy)}
@@ -128,7 +130,9 @@ footer{border-top:1px solid var(--line);padding:38px 0;color:var(--muted);font-s
 
 @media(max-width:760px){
   section{padding:72px 0}
-  .hero{padding:80px 0 64px}
+  .hero{padding:64px 0 56px}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-photo{order:-1;max-width:340px}
   .nav-links{position:absolute;top:68px;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;gap:0;padding:8px 28px 18px;display:none}
   .nav-links.open{display:flex}
   .nav-links a{padding:12px 0;border-bottom:1px solid var(--line)}
@@ -157,13 +161,18 @@ footer{border-top:1px solid var(--line);padding:38px 0;color:var(--muted);font-s
 
 <main>
   <section class="hero">
-    <div class="wrap">
-      <div class="eyebrow">Founder af Pepas · E-commerce · Performance marketing</div>
-      <h1>Jeg skalerer<br>ambitiøse <span class="accent">webshops</span>.</h1>
-      <p>Jeg er Peter Pagaard Sommer — founder af performance marketing-bureauet Pepas og af webshops som Boombutik og Marmalade Co. Jeg lever af at gøre e-commerce profitabel.</p>
-      <div class="cta">
-        <a href="#projekter" class="btn btn-dark">Se mine projekter</a>
-        <a href="https://pepas.dk" target="_blank" rel="noopener" class="btn btn-ghost">Besøg Pepas →</a>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Founder af Pepas · E-commerce · Performance marketing</div>
+        <h1>Jeg skalerer<br>ambitiøse <span class="accent">webshops</span>.</h1>
+        <p>Jeg er Peter Pagaard Sommer — founder af performance marketing-bureauet Pepas og af webshops som Boombutik og Marmalade Co. Jeg lever af at gøre e-commerce profitabel.</p>
+        <div class="cta">
+          <a href="#projekter" class="btn btn-dark">Se mine projekter</a>
+          <a href="https://pepas.dk" target="_blank" rel="noopener" class="btn btn-ghost">Besøg Pepas →</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="portrait.jpg" alt="Peter Pagaard Sommer" width="1100" height="1375">
       </div>
     </div>
   </section>
