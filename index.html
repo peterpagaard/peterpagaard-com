@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Peter Pagaard Sommer</title>
-<meta name="description" content="Peter Pagaard Sommer — entrepreneur from Copenhagen and co-owner of Boom Butik and Pepas.">
+<meta name="description" content="Peter Pagaard Sommer - co-founder of Boom Butik and Pepas. Using AI to cut the boring parts of e-commerce, so there's more time for the creative ones.">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Peter Pagaard Sommer">
-<meta property="og:description" content="Entrepreneur from Copenhagen and co-owner of Boom Butik and Pepas.">
+<meta property="og:description" content="Co-founder of Boom Butik and Pepas. Using AI to cut the boring parts of e-commerce, so there's more time for the creative ones.">
 <meta property="og:url" content="https://peterpagaard.com">
 <meta property="og:image" content="https://peterpagaard.com/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -56,6 +56,9 @@ section{padding:36px 0;border-top:1px solid var(--line)}
 .label{font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:20px}
 .bio p{color:var(--soft);margin-bottom:14px}
 .bio p:last-child{margin-bottom:0}
+.build .row{display:block}
+.build .desc{margin-top:3px}
+.build .note{color:var(--muted);font-size:.92rem;margin-top:18px}
 
 /* Work list */
 .row{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:13px 0;border-bottom:1px solid var(--line)}
@@ -82,6 +85,56 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:.85rem;border-top:1px so
   body{font-size:16px}
 }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://peterpagaard.com/#person",
+      "name": "Peter Pagaard Sommer",
+      "givenName": "Peter",
+      "familyName": "Pagaard Sommer",
+      "url": "https://peterpagaard.com",
+      "image": "https://peterpagaard.com/portrait.jpg",
+      "jobTitle": "Entrepreneur",
+      "knowsAbout": ["E-commerce", "Performance marketing", "Marketing automation", "AI"],
+      "homeLocation": { "@type": "Place", "name": "Copenhagen, Denmark" },
+      "worksFor": [
+        { "@id": "https://boombutik.dk/#/schema/organization/1" },
+        { "@id": "https://pepas.dk/#organization" }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/peter-pagaard-sommer-a260a9219/",
+        "https://www.instagram.com/peter.pagaard/"
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://boombutik.dk/#/schema/organization/1",
+      "name": "Boom Butik",
+      "url": "https://boombutik.dk",
+      "foundingDate": "2020",
+      "founder": { "@id": "https://peterpagaard.com/#person" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://pepas.dk/#organization",
+      "name": "Pepas",
+      "legalName": "Pepas ApS",
+      "url": "https://pepas.dk",
+      "taxID": "43753568",
+      "founder": { "@id": "https://peterpagaard.com/#person" },
+      "address": { "@type": "PostalAddress", "streetAddress": "Nørrebrogade 106", "postalCode": "2200", "addressLocality": "København N", "addressCountry": "DK" }
+    },
+    {
+      "@type": "Brand",
+      "name": "Marmalade Co.",
+      "url": "https://marmaladeco.dk"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -90,7 +143,7 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:.85rem;border-top:1px so
   <section class="intro" style="border-top:0">
     <img src="portrait.jpg" alt="Peter Pagaard Sommer" class="portrait" width="120" height="120">
     <h1>Peter Pagaard Sommer</h1>
-    <div class="role">Co-owner of Boom Butik &amp; Pepas</div>
+    <div class="role">Co-founder of Boom Butik &amp; Pepas</div>
     <div class="links">
       <a href="mailto:peter@pepas.dk">peter@pepas.dk</a>
       <a href="https://www.linkedin.com/in/peter-pagaard-sommer-a260a9219/" target="_blank" rel="noopener">LinkedIn</a>
@@ -100,17 +153,40 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:.85rem;border-top:1px so
 
   <section class="bio">
     <div class="label">About</div>
-    <p>I live in Copenhagen and work in e-commerce. My two main focuses are the webshop Boom Butik, which I've co-owned since 2023, and the agency Pepas, which I co-founded in 2021.</p>
+    <p>I live in Copenhagen and work in e-commerce. My two main focuses are the clothing company Boom Butik, which I co-founded in 2020, and the agency Pepas, which I co-founded in 2021.</p>
+    <p>The best part of the job is the creative part: taking good photos, making campaigns people remember, trying weird ideas. The worst part is everything in between.</p>
+    <p>So in Boom Butik we're using AI to cut out the manual steps, one at a time, and spend the time on the fun stuff instead. I share what we cut away, and what we make with the time, every week on LinkedIn.</p>
+  </section>
+
+  <section class="build">
+    <div class="label">What we've cut away</div>
+    <div class="row">
+      <span class="name">Creator program</span>
+      <span class="desc">No more chasing creators. Approval, orders, emails, reminders and ad codes run on their own.</span>
+    </div>
+    <div class="row">
+      <span class="name">Our own DAM</span>
+      <span class="desc">No more digging through folders. AI tags every photo and video and sends it to Shopify, social and email.</span>
+    </div>
+    <div class="row">
+      <span class="name">Ads</span>
+      <span class="desc">No more building the same ad forty times. AI builds and tunes them. We come up with the ideas.</span>
+    </div>
+    <div class="row">
+      <span class="name">One place for numbers</span>
+      <span class="desc">No more six tabs every morning. Shopify and every ad platform in one dashboard.</span>
+    </div>
+    <p class="note">Built with the team at Boom Butik. <a href="https://www.linkedin.com/in/peter-pagaard-sommer-a260a9219/" target="_blank" rel="noopener" style="border-bottom:1px solid var(--muted)">Follow along on LinkedIn ↗</a></p>
   </section>
 
   <section>
     <div class="label">What I do</div>
     <a href="https://boombutik.dk" target="_blank" rel="noopener" class="row row-lead">
-      <span><span class="name">Boom Butik</span><span class="desc">Webshop for clothing and brands · co-owner</span></span>
+      <span><span class="name">Boom Butik</span><span class="desc">Webshop for clothing and brands · co-founder</span></span>
       <span class="go">boombutik.dk ↗</span>
     </a>
     <a href="https://pepas.dk" target="_blank" rel="noopener" class="row row-lead">
-      <span><span class="name">Pepas</span><span class="desc">Performance marketing agency · co-owner</span></span>
+      <span><span class="name">Pepas</span><span class="desc">Performance marketing agency · co-founder</span></span>
       <span class="go">pepas.dk ↗</span>
     </a>
     <a href="https://marmaladeco.dk" target="_blank" rel="noopener" class="row">
@@ -124,6 +200,10 @@ footer{padding:40px 0 64px;color:var(--muted);font-size:.85rem;border-top:1px so
     <a href="https://politiken.dk/kultur/medier/art10532896/Det-er-%C2%BBen-del-af-jobbet%C2%AB-for-butiksansatte-at-g%C3%B8re-det.-Snart-kan-det-ogs%C3%A5-blive-din-tur" target="_blank" rel="noopener" class="press-item">
       <span class="art">“It's »part of the job« for retail employees. Soon it could be your turn too”</span>
       <span class="src">Politiken · 2025 ↗</span>
+    </a>
+    <a href="https://www.euroman.dk/karriere/de-unge-ledere-viggo-ebbesen-rungoe/5616737" target="_blank" rel="noopener" class="press-item">
+      <span class="art">“Viggo's company sells joggers for millions”</span>
+      <span class="src">Euroman · 2025 ↗</span>
     </a>
     <a href="https://fyens.dk/erhverv/25-aarige-peter-driver-millionforretning-med-sine-bedste-venner-det-maa-aldrig-stige-os-til-hovedet-2025-5-26" target="_blank" rel="noopener" class="press-item">
       <span class="art">“25-year-old Peter runs a million-kroner business with his best friends”</span>
